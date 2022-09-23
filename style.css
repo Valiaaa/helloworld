@@ -41,9 +41,17 @@ h1 {
 .viewpoint {
     float: left;
     width: calc(100% - 285px);
+    height: calc(100vh - 100px);
     border-right: 1.5px solid black;
     border-bottom: 1.5px solid black;
     border-left: 1.5px solid black;
+}
+
+#poem {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 #crossed {
@@ -63,62 +71,27 @@ h1 {
             rgba(0,0,0,0) 100%);
 }
 
+#x {
+    display: none;
+    font-size: 50px;
+    margin-left: 8px;
+    cursor: pointer !important;
+}
 
-#sound {
+
+#sound, #whispered, #vanity, #goodbye, #particles {
     display: none;
     font-family: freight-big-pro, serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    height: calc(100vh - 100px - 22vh);
-    margin-top: 22vh;
-    margin-left: 32%;
+    transform: translateY(-60px);
 }
 
-#whispered {
-    display: none;
-    font-family: freight-big-pro, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    height: calc(100vh - 100px - 17vh);
-    margin-top: 17vh;
-    margin-left: 34%;
+#soundword:hover, #whisperedcolor:hover, #vanitypic:hover, #goodbyedate:hover, #particlestitle:hover {
+    background-color: rgb(231, 214, 178);
+    cursor: pointer !important;
 }
-
-#vanity {
-    display: none;
-    font-family: freight-big-pro, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    height: calc(100vh - 100px - 3vh);
-    margin-top: 3vh;
-    margin-left: 41%;
-}
-
-#goodbye {
-    display: none;
-    font-family: freight-big-pro, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    height: calc(100vh - 100px - 24vh);
-    margin-top: 24vh;
-    margin-left: 34%;
-}
-
-#particles {
-    display: none;
-    font-family: freight-big-pro, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    height: calc(100vh - 100px - 16vh);
-    margin-top: 16vh;
-    margin-left: 43%;
-}
-
 
 
 
@@ -129,19 +102,19 @@ h1 {
     font-size: 30px;
     line-height: calc((100vh - 106px) /5);
     text-align: center;
-    cursor: pointer;  
+    cursor: pointer !important;  
 }
 
 #whisperedcolor {
     background-color: rgb(186, 221, 244);
-    cursor: pointer;  
+    cursor: pointer !important;  
 }
 
 #vanitypic {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 #goodbyedate {
@@ -151,7 +124,7 @@ h1 {
     font-size: 30px;
     line-height: calc((100vh - 106px) /5);
     text-align: center;
-    cursor: pointer;  
+    cursor: pointer !important;  
 }
 
 #particlestitle {
@@ -161,5 +134,5 @@ h1 {
     font-size: 30px;
     line-height: calc((100vh - 106px) /5);
     text-align: center;
-    cursor: pointer;  
+    cursor: pointer !important;  
 }
