@@ -46,7 +46,7 @@ h1 {
     border-left: 1.5px solid black;
 }
 
-.crossed {
+#crossed {
     height: calc(100vh - 100px);
     background: 
         linear-gradient(to top left,
@@ -63,6 +63,103 @@ h1 {
             rgba(0,0,0,0) 100%);
 }
 
-.cross {
-    object-fit: fill;
+
+#sound {
+    display: none;
+    font-family: freight-big-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    height: calc(100vh - 100px - 22vh);
+    margin-top: 22vh;
+    margin-left: 32%;
+}
+
+#whispered {
+    display: none;
+    font-family: freight-big-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    height: calc(100vh - 100px - 17vh);
+    margin-top: 17vh;
+    margin-left: 34%;
+}
+
+#vanity {
+    display: none;
+    font-family: freight-big-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    height: calc(100vh - 100px - 3vh);
+    margin-top: 3vh;
+    margin-left: 41%;
+}
+
+#goodbye {
+    display: none;
+    font-family: freight-big-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    height: calc(100vh - 100px - 24vh);
+    margin-top: 24vh;
+    margin-left: 34%;
+}
+
+#particles {
+    display: none;
+    font-family: freight-big-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    height: calc(100vh - 100px - 16vh);
+    margin-top: 16vh;
+    margin-left: 43%;
+}
+
+
+
+
+#soundword {
+    font-family: freight-big-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: calc((100vh - 106px) /5);
+    text-align: center;
+    cursor: pointer;  
+}
+
+#whisperedcolor {
+    background-color: rgb(186, 221, 244);
+    cursor: pointer;  
+}
+
+#vanitypic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#goodbyedate {
+    font-family: freight-big-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: calc((100vh - 106px) /5);
+    text-align: center;
+    cursor: pointer;  
+}
+
+#particlestitle {
+    font-family: freight-big-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: calc((100vh - 106px) /5);
+    text-align: center;
+    cursor: pointer;  
 }
