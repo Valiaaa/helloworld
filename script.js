@@ -4,11 +4,13 @@ $(document).ready(function(){
         $("#crossed").show();
         $("#vanity, #sound, #whispered, #goodbye, #particles").hide();
         $("#x").hide();
+        $("#poem").css('display', 'none');
     });
 
     $("#vanitypic").click(function(){
         $("#crossed").hide();
         $("#sound, #whispered, #goodbye, #particles").hide();
+        $("#poem").css('display', 'flex');
         $("#vanity").show();
         $("#x").show();
     });
@@ -16,6 +18,7 @@ $(document).ready(function(){
     $("#soundword").click(function(){
         $("#crossed").hide();
         $("#vanity, #whispered, #goodbye, #particles").hide();
+        $("#poem").css('display', 'flex');
         $("#sound").show();
         $("#x").show();
     });
@@ -23,6 +26,7 @@ $(document).ready(function(){
     $("#whisperedcolor").click(function(){
         $("#crossed").hide();
         $("#vanity, #sound, #goodbye, #particles").hide();
+        $("#poem").css('display', 'flex');
         $("#whispered").show();
         $("#x").show();
     });
@@ -30,6 +34,7 @@ $(document).ready(function(){
     $("#goodbyedate").click(function(){
         $("#crossed").hide();
         $("#vanity, #sound, #whispered, #particles").hide();
+        $("#poem").css('display', 'flex');
         $("#goodbye").show();
         $("#x").show();
     });
@@ -37,6 +42,7 @@ $(document).ready(function(){
     $("#particlestitle").click(function(){
         $("#crossed").hide();
         $("#vanity, #sound, #whispered, #goodbye").hide();
+        $("#poem").css('display', 'flex');
         $("#particles").show();
         $("#x").show();
     });

@@ -48,10 +48,10 @@ h1 {
 }
 
 #poem {
-    height: 100%;
-    display: flex;
+    height: calc(100% - 60px);
     justify-content: center;
     align-items: center; 
+    display: none;
 }
 
 #crossed {
@@ -85,7 +85,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    transform: translateY(-60px);
+    transform: translateY(-30px);
 }
 
 #soundword:hover, #whisperedcolor:hover, #vanitypic:hover, #goodbyedate:hover, #particlestitle:hover {
