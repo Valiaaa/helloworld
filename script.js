@@ -48,5 +48,31 @@ $(document).ready(function(){
     });
 
 
+    location.reload(function() {
+        var answer;
+    
+        var responses = Array(15);
+        responses[0] = "Ask again later...";
+        responses[1] = "Yes";
+        responses[2] = "No";
+        responses[3] = "It appears to be so";
+        responses[4] = "Reply is hazy, please try again";
+        responses[5] = "Yes, definitely";
+        responses[6] = "What is it you really want to know?";
+        responses[7] = "Outlook is good";
+        responses[8] = "My sources say no";
+        responses[9] = "Signs point to yes";
+        responses[10] = "Don't count on it";
+        responses[11] = "Cannot predict now";
+        responses[12] = "As I see it, yes";
+        responses[13] = "Better not tell you now";
+        responses[14] = "Concentrate and ask again";
+    
+        var RandNum = Math.floor(Math.random() * 4);
+    
+        var answer = responses[RandNum];
+    
+        $("#Response").html(answer);
+      });
 
 });
