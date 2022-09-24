@@ -47,7 +47,7 @@ $(document).ready(function(){
         $("#x").show();
     });
 
-
+/* 
     location.reload(function() {
         var answer;
     
@@ -73,6 +73,6 @@ $(document).ready(function(){
         var answer = responses[RandNum];
     
         $("#Response").html(answer);
-      });
+      }); */
 
 });

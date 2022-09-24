@@ -3,6 +3,23 @@ body {
     background-color: rgb(239, 231, 214);
 }
 
+::-webkit-scrollbar {
+	width: 12px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+	background-color: black;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+  }
+
+:root{
+	--wdth: 100;
+	--color: black;
+}
+
 .title {
     width: calc(100% - 3.5px);
     border: 1.5px solid black;
@@ -48,11 +65,13 @@ h1 {
 }
 
 #poem {
-    height: calc(100% - 60px);
+    height: 100%;
+    transform: translateY(-60px);
     justify-content: center;
     align-items: center; 
     display: none;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 #crossed {
@@ -86,7 +105,8 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    transform: translateY(-30px);
+    max-height: 90%;
+
 }
 
 #soundword:hover, #whisperedcolor:hover, #vanitypic:hover, #goodbyedate:hover, #particlestitle:hover {
