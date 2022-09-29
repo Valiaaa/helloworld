@@ -69,7 +69,7 @@ $(document).ready(function(){
     function rsound() {
         var output;
         var result = Array(5);
-        result[0] = "<center><img src='pic/' id='soundpic'></center>";
+        result[0] = "<center><img src='pic/sound.png' id='soundpic'></center>";
         result[1] = "<div id='soundword'>153 words</div>";
         result[2] = "<div id='soundcolor'><svg><rect/></svg></div>";
         result[3] = "<div id='sounddate'>Oct 6th, 2019</div>";
@@ -86,7 +86,7 @@ $(document).ready(function(){
     function rwhispered() {
         var output;
         var result = Array(5);
-        result[0] = "<center><img src='pic/' id='whisperedpic'></center>";
+        result[0] = "<center><img src='pic/moonlight.png' id='whisperedpic'></center>";
         result[1] = "<div id='whisperedword'>144 words</div>";
         result[2] = "<div id='whisperedcolor'><svg><rect/></svg></div>";
         result[3] = "<div id='whispereddate'>Sep 22nd, 2019</div>";
@@ -105,7 +105,7 @@ $(document).ready(function(){
     function rgoodbye() {
         var output;
         var result = Array(5);
-        result[0] = "<center><img src='pic/' id='goodbyepic'></center>";
+        result[0] = "<center><img src='pic/goodbye.png' id='goodbyepic'></center>";
         result[1] = "<div id='goodbyeword'>57 words</div>";
         result[2] = "<div id='goodbyecolor'><svg><rect/></svg></div>";
         result[3] = "<div id='goodbyedate'>Mar 21st, 2022</div>";
@@ -122,7 +122,7 @@ $(document).ready(function(){
     function rparticles() {
         var output;
         var result = Array(5);
-        result[0] = "<center><img src='pic/' id='particlespic'></center>";
+        result[0] = "<center><img src='pic/particles.png' id='particlespic'></center>";
         result[1] = "<div id='particlesword'>47 words</div>";
         result[2] = "<div id='particlescolor'><svg><rect/></svg></div>";
         result[3] = "<div id='particlesdate'>Sep 18th, 2022</div>";

@@ -133,10 +133,16 @@ rect {
 }
 
 
+center {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 #vanitypic, #soundpic, #whisperedpic, #goodbyepic, #particlespic {
-    max-width: 60%;
-    max-height: 60%;
+    width: 60%;
+    height: 60%;
     object-fit: cover;
     cursor: pointer !important;
 }
@@ -158,6 +164,7 @@ rect {
     justify-content: center;
     align-items: center;
     cursor: pointer !important;  
+    height: 100%;
 }
 
 #soundcolor {
@@ -166,6 +173,7 @@ rect {
     justify-content: center;
     align-items: center;
     cursor: pointer !important;  
+    height: 100%;
 }
 
 #whisperedcolor {
@@ -174,6 +182,7 @@ rect {
     justify-content: center;
     align-items: center;
     cursor: pointer !important;  
+    height: 100%;
 }
 
 #goodbyecolor {
@@ -182,6 +191,7 @@ rect {
     justify-content: center;
     align-items: center;
     cursor: pointer !important;  
+    height: 100%;
 }
 
 #particlescolor {
@@ -190,6 +200,7 @@ rect {
     justify-content: center;
     align-items: center;
     cursor: pointer !important;  
+    height: 100%;
 }
 
 
@@ -203,5 +214,39 @@ rect {
 
     .viewpoint {
         width: calc(100% - 185px);
+    }
+
+    #vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #sound, #whispered, #vanity, #goodbye, #particles {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+	.indexcon {
+        width: 120px;
+    }
+
+    .viewpoint {
+        width: calc(100% - 125px);
+    }
+
+    #vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    #sound, #whispered, #vanity, #goodbye, #particles {
+        font-size: 15px;
     }
 }
