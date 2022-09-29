@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#poem").css('display', 'none');
     });
 
-    $("#vanitypic").click(function(){
+    $(".index1").click(function(){
         $("#crossed").hide();
         $("#sound, #whispered, #goodbye, #particles").hide();
         $("#poem").css('display', 'flex');
@@ -15,7 +15,7 @@ $(document).ready(function(){
         $("#x").show();
     });
 
-    $("#soundword").click(function(){
+    $(".index2").click(function(){
         $("#crossed").hide();
         $("#vanity, #whispered, #goodbye, #particles").hide();
         $("#poem").css('display', 'flex');
@@ -23,7 +23,7 @@ $(document).ready(function(){
         $("#x").show();
     });
 
-    $("#whisperedcolor").click(function(){
+    $(".index3").click(function(){
         $("#crossed").hide();
         $("#vanity, #sound, #goodbye, #particles").hide();
         $("#poem").css('display', 'flex');
@@ -31,7 +31,7 @@ $(document).ready(function(){
         $("#x").show();
     });
 
-    $("#goodbyedate").click(function(){
+    $(".index4").click(function(){
         $("#crossed").hide();
         $("#vanity, #sound, #whispered, #particles").hide();
         $("#poem").css('display', 'flex');
@@ -39,7 +39,7 @@ $(document).ready(function(){
         $("#x").show();
     });
 
-    $("#particlestitle").click(function(){
+    $(".index5").click(function(){
         $("#crossed").hide();
         $("#vanity, #sound, #whispered, #goodbye").hide();
         $("#poem").css('display', 'flex');
@@ -47,32 +47,94 @@ $(document).ready(function(){
         $("#x").show();
     });
 
-/* 
-    location.reload(function() {
-        var answer;
-    
-        var responses = Array(15);
-        responses[0] = "Ask again later...";
-        responses[1] = "Yes";
-        responses[2] = "No";
-        responses[3] = "It appears to be so";
-        responses[4] = "Reply is hazy, please try again";
-        responses[5] = "Yes, definitely";
-        responses[6] = "What is it you really want to know?";
-        responses[7] = "Outlook is good";
-        responses[8] = "My sources say no";
-        responses[9] = "Signs point to yes";
-        responses[10] = "Don't count on it";
-        responses[11] = "Cannot predict now";
-        responses[12] = "As I see it, yes";
-        responses[13] = "Better not tell you now";
-        responses[14] = "Concentrate and ask again";
-    
-        var RandNum = Math.floor(Math.random() * 4);
-    
-        var answer = responses[RandNum];
-    
-        $("#Response").html(answer);
-      }); */
+
+
+    function rvanity() {
+        var output;
+        var result = Array(5);
+        result[0] = "<center><img src='pic/vanity.png' id='vanitypic'></center>";
+        result[1] = "<div id='vanityword'>104 words</div>";
+        result[2] = "<div id='vanitycolor'><svg><rect/></svg></div>";
+        result[3] = "<div id='vanitydate'>June 20th, 2021</div>";
+        result[4] = "<div id='vanitytitle'>In Vanity</div>";
+
+        var Num = Math.floor(Math.random() * 5);
+        var output = result [Num];
+
+        $(".index1").html(output);
+    };
+
+    rvanity();
+
+    function rsound() {
+        var output;
+        var result = Array(5);
+        result[0] = "<center><img src='pic/' id='soundpic'></center>";
+        result[1] = "<div id='soundword'>153 words</div>";
+        result[2] = "<div id='soundcolor'><svg><rect/></svg></div>";
+        result[3] = "<div id='sounddate'>Oct 6th, 2019</div>";
+        result[4] = "<div id='soundtitle'>A Little Sound</div>";
+
+        var Num = Math.floor(Math.random() * 5);
+        var output = result [Num];
+
+        $(".index2").html(output);
+    };
+
+    rsound();
+
+    function rwhispered() {
+        var output;
+        var result = Array(5);
+        result[0] = "<center><img src='pic/' id='whisperedpic'></center>";
+        result[1] = "<div id='whisperedword'>144 words</div>";
+        result[2] = "<div id='whisperedcolor'><svg><rect/></svg></div>";
+        result[3] = "<div id='whispereddate'>Sep 22nd, 2019</div>";
+        result[4] = "<div id='whisperedtitle'>Moonlight</div>";
+
+        var Num = Math.floor(Math.random() * 5);
+        var output = result [Num];
+
+        $(".index3").html(output);
+    };
+
+    rwhispered();
+
+    rsound();
+
+    function rgoodbye() {
+        var output;
+        var result = Array(5);
+        result[0] = "<center><img src='pic/' id='goodbyepic'></center>";
+        result[1] = "<div id='goodbyeword'>57 words</div>";
+        result[2] = "<div id='goodbyecolor'><svg><rect/></svg></div>";
+        result[3] = "<div id='goodbyedate'>Mar 21st, 2022</div>";
+        result[4] = "<div id='goodbyetitle'>Goodbye</div>";
+
+        var Num = Math.floor(Math.random() * 5);
+        var output = result [Num];
+
+        $(".index4").html(output);
+    };
+
+    rgoodbye();
+
+    function rparticles() {
+        var output;
+        var result = Array(5);
+        result[0] = "<center><img src='pic/' id='particlespic'></center>";
+        result[1] = "<div id='particlesword'>47 words</div>";
+        result[2] = "<div id='particlescolor'><svg><rect/></svg></div>";
+        result[3] = "<div id='particlesdate'>Sep 18th, 2022</div>";
+        result[4] = "<div id='particlestitle'>Particles</div>";
+
+        var Num = Math.floor(Math.random() * 5);
+        var output = result [Num];
+
+        $(".index5").html(output);
+    };
+
+    rparticles();
+
 
 });
