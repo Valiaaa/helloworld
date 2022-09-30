@@ -43,7 +43,7 @@ h1 {
     border-right: hidden;
     overflow: scroll;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: hidden; /*add when there's a needing of scrollbar*/
 }
    
 
