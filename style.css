@@ -135,12 +135,14 @@ rect {
 
 center {
     display: flex;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
 
 #vanitypic, #soundpic, #whisperedpic, #goodbyepic, #particlespic {
+    width: 60%;
     height: 60%;
     object-fit: cover;
     cursor: pointer !important;
