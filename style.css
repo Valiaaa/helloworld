@@ -31,19 +31,20 @@ h1 {
     font-style: italic;
     font-size: 56px;
     line-height: 60px;
-    margin: 8px;
+    margin: 10px;
+    margin-bottom: 14px;
 }
 
 .indexcon {
     float:left;
     width: 280px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 106px);
     border: 1.5px solid black;
     border-top: hidden;
     border-right: hidden;
     overflow: scroll;
     overflow-x: hidden;
-    overflow-y: hidden; /*add when there's a needing of scrollbar*/
+    /*overflow-y: hidden; add when there's a needing of scrollbar*/
 }
    
 
@@ -55,21 +56,21 @@ h1 {
 
 .index1, .index2, .index3, .index4, .index5, .index6 {
     width: 100%;
-    height: calc((100vh - 106px) /5);
+    height: calc((100vh - 112px) /5);
     border-bottom: 1.5px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*the last index*/ .index5 {
+/*the last index*/ .index6 {
     border-bottom: hidden;
 }
 
 .viewpoint {
     float: left;
     width: calc(100% - 285px);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 106px);
     border-right: 1.5px solid black;
     border-bottom: 1.5px solid black;
     border-left: 1.5px solid black;
@@ -77,7 +78,7 @@ h1 {
 
 #poem {
     height: 100%;
-    transform: translateY(-60px);
+    transform: translateY(-64px);
     justify-content: center;
     align-items: center; 
     display: none;
@@ -88,7 +89,7 @@ h1 {
 }
 
 #crossed {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 106px);
     background: 
         linear-gradient(to top left,
             rgba(0,0,0,0) 0%,
@@ -106,8 +107,9 @@ h1 {
 
 #x {
     display: none;
-    font-size: 50px;
-    margin-left: 8px;
+    width: 35px;
+    margin-left: 10px;
+    margin-top: 10px;
     cursor: pointer !important;
     position: relative;
     z-index: 2;
@@ -127,9 +129,9 @@ rect {
 
 
 
-#sound, #whispered, #vanity, #goodbye, #particles {
+#sound, #whispered, #vanity, #goodbye, #particles, #cig {
     display: none;
-    font-family: freight-big-pro, serif;
+    font-family: freight-text-pro, serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
@@ -137,7 +139,7 @@ rect {
 
 }
 
-.index1:hover, .index2:hover, .index3:hover, .index4:hover, .index5:hover {
+.index1:hover, .index2:hover, .index3:hover, .index4:hover, .index5:hover, .index6:hover {
     background-color: rgb(231, 214, 178);
     cursor: pointer !important;
 }
@@ -151,14 +153,14 @@ center {
     align-items: center;
 }
 
-#vanitypic, #soundpic, #whisperedpic, #goodbyepic, #particlespic {
+#vanitypic, #soundpic, #whisperedpic, #goodbyepic, #particlespic, #cigpic {
     width: 60%;
     height: 60%;
     object-fit: cover;
     cursor: pointer !important;
 }
 
-#vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle {
+#vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle, #cigword, #cigdate, #cigtitle {
     font-family: freight-big-pro, serif;
     font-weight: 400;
     font-style: normal;
@@ -214,6 +216,15 @@ center {
     height: 100%;
 }
 
+#cigcolor {
+    fill: rgb(187, 187, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer !important;  
+    height: 100%;
+}
+
 
 
 
@@ -227,7 +238,7 @@ center {
         width: calc(100% - 185px);
     }
 
-    #vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle {
+    #vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle, #cigword, #cigdate, #cigtitle {
         font-size: 24px;
     }
 
@@ -235,8 +246,15 @@ center {
         font-size: 50px;
     }
 
-    #sound, #whispered, #vanity, #goodbye, #particles {
+    #sound, #whispered, #vanity, #goodbye, #particles, #cig {
         font-size: 18px;
+    }
+    .index1, .index2, .index3, .index4, .index5, .index6 {
+        width: 100%;
+        height: calc((100vh - 106px) /6);
+    }
+    .indexcon {
+        overflow-y: hidden;
     }
 }
 
@@ -249,7 +267,7 @@ center {
         width: calc(100% - 105px);
     }
 
-    #vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle {
+    #vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle, #cigword, #cigdate, #cigtitle {
         font-size: 20px;
     }
 
@@ -257,8 +275,15 @@ center {
         font-size: 42px;
     }
 
-    #sound, #whispered, #vanity, #goodbye, #particles {
+    #sound, #whispered, #vanity, #goodbye, #particles, #cig {
         font-size: 15px;
         margin-left: 12px;
+    }
+    .index1, .index2, .index3, .index4, .index5, .index6 {
+        width: 100%;
+        height: calc((100vh - 106px) /6);
+    }
+    .indexcon {
+        overflow-y: hidden;
     }
 }

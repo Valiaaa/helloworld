@@ -2,14 +2,14 @@ $(document).ready(function(){
 
     $("#x").click(function(){
         $("#crossed").show();
-        $("#vanity, #sound, #whispered, #goodbye, #particles").hide();
+        $("#vanity, #sound, #whispered, #goodbye, #particles, #cig").hide();
         $("#x").hide();
         $("#poem").css('display', 'none');
     });
 
     $(".index1").click(function(){
         $("#crossed").hide();
-        $("#sound, #whispered, #goodbye, #particles").hide();
+        $("#sound, #whispered, #goodbye, #particles, #cig").hide();
         $("#poem").css('display', 'flex');
         $("#vanity").show();
         $("#x").show();
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     $(".index2").click(function(){
         $("#crossed").hide();
-        $("#vanity, #whispered, #goodbye, #particles").hide();
+        $("#vanity, #whispered, #goodbye, #particles, #cig").hide();
         $("#poem").css('display', 'flex');
         $("#sound").show();
         $("#x").show();
@@ -25,7 +25,7 @@ $(document).ready(function(){
 
     $(".index3").click(function(){
         $("#crossed").hide();
-        $("#vanity, #sound, #goodbye, #particles").hide();
+        $("#vanity, #sound, #goodbye, #particles, #cig").hide();
         $("#poem").css('display', 'flex');
         $("#whispered").show();
         $("#x").show();
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
     $(".index4").click(function(){
         $("#crossed").hide();
-        $("#vanity, #sound, #whispered, #particles").hide();
+        $("#vanity, #sound, #whispered, #particles, #cig").hide();
         $("#poem").css('display', 'flex');
         $("#goodbye").show();
         $("#x").show();
@@ -41,9 +41,17 @@ $(document).ready(function(){
 
     $(".index5").click(function(){
         $("#crossed").hide();
-        $("#vanity, #sound, #whispered, #goodbye").hide();
+        $("#vanity, #sound, #whispered, #goodbye, #cig").hide();
         $("#poem").css('display', 'flex');
         $("#particles").show();
+        $("#x").show();
+    });
+
+    $(".index6").click(function(){
+        $("#crossed").hide();
+        $("#vanity, #sound, #whispered, #goodbye, #particles").hide();
+        $("#poem").css('display', 'flex');
+        $("#cig").show();
         $("#x").show();
     });
 
@@ -135,6 +143,23 @@ $(document).ready(function(){
     };
 
     rparticles();
+
+    function rcig() {
+        var output;
+        var result = Array(5);
+        result[0] = "<center><img src='pic/cig.png' id='cigpic'></center>";
+        result[1] = "<div id='cigword'>119 words</div>";
+        result[2] = "<div id='cigcolor'><svg><rect/></svg></div>";
+        result[3] = "<div id='cigdate'>Oct 3rd, 2022</div>";
+        result[4] = "<div id='cigtitle'>Cig Break</div>";
+
+        var Num = Math.floor(Math.random() * 5);
+        var output = result [Num];
+
+        $(".index6").html(output);
+    };
+
+    rcig();
 
 
 });
