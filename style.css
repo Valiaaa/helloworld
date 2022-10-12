@@ -286,4 +286,7 @@ center {
     .indexcon {
         overflow-y: hidden;
     }
+    #x {
+        width: 25px;
+    }
 }
