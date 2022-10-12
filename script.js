@@ -78,28 +78,28 @@ $(document).ready(function(){
 
     rvanity();
 
-    function pvanity() {
-        var output;
-        var result = Array(5);
-        result[0] = "<center><img src='pic/vanity.png' id='vanitypic'></center>";
-        result[1] = "<div id='vanityword'>104 words</div>";
-        result[2] = "<div id='vanitycolor'><svg><rect/></svg></div>";
-        result[3] = "<div id='vanitydate'>June 20th, 2021</div>";
-        result[4] = "<div id='vanitytitle'>In Vanity</div>";
+    // function pvanity() {
+    //     var output;
+    //     var result = Array(5);
+    //     result[0] = "<center><img src='pic/vanity.png' id='vanitypic'></center>";
+    //     result[1] = "<div id='vanityword'>104 words</div>";
+    //     result[2] = "<div id='vanitycolor'><svg><rect/></svg></div>";
+    //     result[3] = "<div id='vanitydate'>June 20th, 2021</div>";
+    //     result[4] = "<div id='vanitytitle'>In Vanity</div>";
 
-        if (Num === 4) {
-            Num = 0;
-        } else {Num = Num +1};
+    //     if (Num === 4) {
+    //         Num = 0;
+    //     } else {Num = Num +1};
         
-        var output = result [Num];
+    //     var output = result [Num];
 
-        $(".index1").html(output);
-    };
+    //     $(".index1").html(output);
+    // };
 
-    $(".index1").mouseenter(function(){
-        pvanity();
-        console.log(Num);
-    });
+    // $(".index1").mouseenter(function(){
+    //     pvanity();
+    //     console.log(Num);
+    // });
 
 
     function rsound() {
