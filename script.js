@@ -14,6 +14,7 @@ $(document).ready(function(){
         $("#vanity").show();
         $("#x").show();
     });
+ 
 
     $(".index2").click(function(){
         $("#crossed").hide();
@@ -57,6 +58,9 @@ $(document).ready(function(){
 
 
 
+
+    var Num
+
     function rvanity() {
         var output;
         var result = Array(5);
@@ -74,6 +78,30 @@ $(document).ready(function(){
 
     rvanity();
 
+    function pvanity() {
+        var output;
+        var result = Array(5);
+        result[0] = "<center><img src='pic/vanity.png' id='vanitypic'></center>";
+        result[1] = "<div id='vanityword'>104 words</div>";
+        result[2] = "<div id='vanitycolor'><svg><rect/></svg></div>";
+        result[3] = "<div id='vanitydate'>June 20th, 2021</div>";
+        result[4] = "<div id='vanitytitle'>In Vanity</div>";
+
+        if (Num === 4) {
+            Num = 0;
+        } else {Num = Num +1};
+        
+        var output = result [Num];
+
+        $(".index1").html(output);
+    };
+
+    $(".index1").mouseenter(function(){
+        pvanity();
+        console.log(Num);
+    });
+
+
     function rsound() {
         var output;
         var result = Array(5);
@@ -83,7 +111,7 @@ $(document).ready(function(){
         result[3] = "<div id='sounddate'>Oct 6th, 2019</div>";
         result[4] = "<div id='soundtitle'>A Little Sound</div>";
 
-        var Num = Math.floor(Math.random() * 5);
+        Num = Math.floor(Math.random() * 5);
         var output = result [Num];
 
         $(".index2").html(output);
@@ -107,8 +135,6 @@ $(document).ready(function(){
     };
 
     rwhispered();
-
-    rsound();
 
     function rgoodbye() {
         var output;
