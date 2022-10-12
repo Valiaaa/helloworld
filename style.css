@@ -264,7 +264,7 @@ center {
     }
 
     .viewpoint {
-        width: calc(100% - 115px);
+        width: calc(100% - 95px);
     }
 
     #vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle, #cigword, #cigdate, #cigtitle {
