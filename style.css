@@ -78,7 +78,7 @@ h1 {
 
 #poem {
     height: 100%;
-    transform: translateY(-64px);
+    transform: translateY(-49px);
     justify-content: center;
     align-items: center; 
     display: none;
