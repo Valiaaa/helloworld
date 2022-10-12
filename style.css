@@ -260,11 +260,11 @@ center {
 
 @media screen and (max-width: 750px) {
 	.indexcon {
-        width: 100px;
+        width: 90px;
     }
 
     .viewpoint {
-        width: calc(100% - 105px);
+        width: calc(100% - 115px);
     }
 
     #vanityword, #vanitydate, #vanitytitle, #soundword, #sounddate, #soundtitle,#whisperedword, #whispereddate, #whisperedtitle, #goodbyeword, #goodbyedate, #goodbyetitle, #particlesword, #particlesdate, #particlestitle, #cigword, #cigdate, #cigtitle {
